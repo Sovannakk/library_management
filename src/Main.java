@@ -93,12 +93,12 @@ public class Main {
 
     private static void addNewBook(){
         System.out.println("========= ADD BOOK INFO =========");
-        for (int i = 0; i < BOOKS.length; i++){
+        for (int i = 3; i < BOOKS.length; i++){
             if(BOOKS[i] == null){
                 BOOKS[i] = new Book();
                 Author author = new Author();
-                System.out.println("=> Book ID : " + (BOOKS.length + 1));
-                BOOKS[i].setId(BOOKS.length + 1);
+                System.out.println("=> Book ID : " + (i + 1));
+                BOOKS[i].setId(i + 1);
                 System.out.print("=> Enter Book's Name : ");
                 BOOKS[i].setTitle(SCANNER.next());
                 System.out.print("=> Enter Book Author Name : ");
